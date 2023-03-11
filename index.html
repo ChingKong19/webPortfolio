@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c58a1c4fcd.js" crossorigin="anonymous"></script>
+
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="leftnav-container" id="leftnav">
+        <i class="fa-sharp fa-solid fa-xmark" onclick="leftNavClose()"></i>
+        <div class="leftnav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contactme</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Item-1 -->
+        <div class="item" id="home">
+            <div class="name-logo">
+                <h1>Mikko</h1>
+            </div>
+            <div class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contactme</a>
+            </div>
+            <div class="modes">
+                <div class="darkmode-lightmode">
+                    <i class="fas fa-moon" onclick="darkmode()" id="darkmode"></i>
+                    <i class="fas fa-sun" onclick="lightmode()" id="lightmode"></i>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fas fa-bars" onclick="leftNavOpen()"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item-2 -->
+        <div class="item"> 
+
+            <div class="extensions">
+                <i class="fab fa-github" title="Visit Github"></i>
+                <i class="fab fa-linkedin" title="Visit LinkedIn"></i>
+                <i class="fas fa-basketball" title="View Hobbies"></i>
+            </div>
+
+            <div class="hero-greetings">
+                <div class="hero-text">
+                    <h1>Hi, Im <br><span>Mikko!</span></h1>
+                    <p><b>Front end developer</b></p>
+                    <p>Web designer and developer from Philippines. </p><br>
+                    <a href="#">Contact Me</a>
+                </div>
+                <div class="hero-image">
+                    <img src="//unsplash.it/300/300" alt="image-of-the-owner">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Item-3 -->
+        <div class="item" id="about">
+            <div class="about-intro">
+                <h1>About Me</h1>
+                <p>My introduction</p>
+            </div>
+
+            <div class="about-container">
+                <div class="owner-img">
+                    <img src="//unsplash.it/300/300" alt="image-of-the-owner">
+                </div>
+                <div class="owner-info">
+                    <div class="owner-info-detail">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quos! Cum, culpa neque. Deserunt nostrum tenetur explicabo animi excepturi ea.</p><br>
+                    </div>
+                    <div class="owner-info-card">
+                        <div class="card">
+                            <h2>02+</h2>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="card">
+                            <h2>10+</h2>
+                            <span>Completed Projects</span>
+                        </div>
+                        <div class="card">
+                            <h2>01+</h2>
+                            <span>Companies Worked</span>
+                        </div>
+                    </div>
+                    <div class="owner-info-cv">
+                        <br>
+                        <a href="#">Download CV <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item-4 -->
+        <div class="item" id="skills">
+            <div class="skills-intro">
+                <h1>Skills</h1>
+                <p>My technical level</p>
+            </div>
+
+            <div class="skills-container">
+<!-- Frontend -->
+                <div class="item-container">
+                    <div class="item-info-container">
+                        <div class="item-container-icon">
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <h3>Frontend Developer</h3>
+                                <p>0 Years</p>
+                            </div>
+                        </div>
+                        <div class="item-container-drp">
+                            <i class="fa-solid fa-angle-down" onclick="dropdown()"></i>
+                        </div>
+                    </div>
+                    <div class="item-dropdown" id="dropdown">
+                        <h4>HTML</h4>
+                        <div class="item-meter meter1"></div>
+                        <h4>CSS</h4>
+                        <div class="item-meter meter2"></div>
+                        <h4>JavaScript</h4>
+                        <div class="item-meter meter3"></div>
+                        <h4>React</h4>
+                        <div class="item-meter meter4"></div>
+                    </div>
+                </div>
+<!-- Backend -->
+                <div class="item-container">
+                    <div class="item-info-container">
+                        <div class="item-container-icon">
+                            <i class="fa-solid fa-server"></i>
+                            <div>
+                                <h3>Backend Developer</h3>
+                                <p>0 Years</p>
+                            </div>
+                        </div>
+                        <div class="item-container-drp">
+                            <i class="fa-solid fa-angle-down" onclick="dropdownTwo()"></i>
+                        </div>
+                    </div>
+                    <div class="item-dropdown" id="dropdownTwo">
+                        <h4>PHP</h4>
+                        <div class="item-meter meter5"></div>
+                        <h4>Node js</h4>
+                        <div class="item-meter meter6"></div>
+                        <h4>Firebase</h4>
+                        <div class="item-meter meter7"></div>
+                        <h4>Python</h4>
+                        <div class="item-meter meter8"></div>
+                    </div>
+                </div>
+<!-- Design -->
+                <div class="item-container">
+                    <div class="item-info-container">
+                        <div class="item-container-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <div>
+                                <h3>Designer</h3>
+                                <p>0 Years</p>
+                            </div>
+                        </div>
+                        <div class="item-container-drp">
+                            <i class="fa-solid fa-angle-down" onclick="dropdownThree()"></i>
+                        </div>
+                    </div>
+                    <div class="item-dropdown" id="dropdownThree">
+                        <h4>Figma</h4>
+                        <div class="item-meter meter9"></div>
+                        <h4>Sketch</h4>
+                        <div class="item-meter meter10"></div>
+                        <h4>Photoshop</h4>
+                        <div class="item-meter meter11"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Item-5 -->
+        <div class="item">
+            <div class="qualification-intro">
+                <h1>Qualification</h1>
+                <p>My personal journey</p>
+            </div>
+
+            <div class="qualification-container">
+                <div class="timeline-container">
+                    <div class="timeline-cards">
+                        <h2>Frontend developer</h2>
+                        <p>2020 - 2021</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, saepe!</p>
+                    </div>
+                    <div class="timeline-cards">
+                        <h2>Backend developer</h2>
+                        <p>2022 - 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, saepe!</p>
+                    </div>
+                    <div class="timeline-cards">
+                        <h2>Designer</h2>
+                        <p>2023 / Current</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, saepe!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item-6 -->
+        <div class="item" id="services">
+            <div class="services-intro">
+                <h1>Services</h1>
+                <p>What I offer</p>
+            </div>
+            <div class="card-container">
+                <div class="cards">
+                    <div class="cards-content">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <h3>UI / UX Design</h3><br>
+                        <button onclick="openCard()">View More ></button>
+                    </div>
+                </div>
+                
+                <div class="cards">
+                    <div class="cards-content">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Frontend Development</h3><br>
+                        <button onclick="openCardTwo()">View More ></button>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="cards-content">
+                        <i class="fa-solid fa-regular fa-tape"></i>
+                        <h3>Branding Design</h3><br>
+                        <button onclick="openCardThree()">View More ></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop-up Area -->
+            <div class="popup-container">
+                <div class="pop-container-1" id="displayCard">
+                    <div class="overlay" >
+                        <div class="pop-text">
+                            <h2>UI | UX Design</h2><br>
+                            <span onclick="disposeCard()">&times;</span>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I develop User Interface.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> Web page development.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I create ux element interactions.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I position your company brand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-container">
+                <div class="pop-container-1" id="displayCardTwo">
+                    <div class="overlay" >
+                        <div class="pop-text">
+                            <h2>Frontend Developer</h2><br>
+                            <span onclick="disposeCardTwo()">&times;</span>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I develop User Interface.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> Web page development.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I create ux element interactions.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I position your company brand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-container">
+                <div class="pop-container-1" id="displayCardThree">
+                    <div class="overlay" >
+                        <div class="pop-text">
+                            <h2>Branding design</h2><br>
+                            <span onclick="disposeCardThree()">&times;</span>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I develop User Interface.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> Web page development.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I create ux element interactions.
+                            </p>
+                            <p>
+                                <i class="fa-sharp fa-regular fa-circle-check"></i> I position your company brand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popup-Area end -->
+        </div>
+
+        
+
+        <!-- Item-7 -->
+        <div class="item" id="portfolio">
+            <div class="portfolio-intro">
+                <h1>Portfolio</h1>
+                <p>Most recent work</p>
+            </div>
+            
+            <div class="portfolio-container">
+                <div class="pcontainer-1">
+                    <div>
+                        <img src="//unsplash.it/500/200">
+                    </div>
+                    <div class="pcontainer-text">
+                        <h3>Personal Portfolio</h3><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur, dolor explicabo accusamus debitis itaque eveniet tempore perspiciatis similique ducimus.</p><br>
+                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="pcontainer-2">
+                    <div class="pcontainer-text">
+                        <h3>Modern Website</h3><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur, dolor explicabo accusamus debitis itaque eveniet tempore perspiciatis similique ducimus.</p><br>
+                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="//unsplash.it/500/200">
+                    </div>
+                </div>
+
+                <div class="pcontainer-3">
+                    <div>
+                        <img src="//unsplash.it/500/200">
+                    </div>
+                    <div class="pcontainer-text">
+                        <h3>Brand Design</h3><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur, dolor explicabo accusamus debitis itaque eveniet tempore perspiciatis similique ducimus.</p><br>
+                        <a href="#">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item-8 -->
+        <div class="item" id="contact">
+            <div class="contact-intro">
+                <h1>Contact</h1>
+                <p>Get in touch</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-phone">
+                        <div><i class="fa-solid fa-phone"></i></div>
+                        <div class="phone-details">
+                            <h3>Call Me</h3>
+                            <p>0912-501-1840</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-email">
+                        <div><i class="fa-solid fa-envelope"></i></div>
+                        <div class="email-details">
+                            <h3>Email</h3>
+                            <p>mikkojardenico@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-location">
+                        <div><i class="fa-solid fa-location"></i></div>
+                        <div class="location-details">
+                            <h3>Location</h3>
+                            <p>Km 7.5 Matina Pangi, Davao City</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-inputarea">
+                    <form action="get">
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Project" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <button>Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Item-9 -->
+        <div class="item">
+            <div class="footer-logo">
+                <h1>Mikko</h1>
+                <span>Frontend developer</span>
+            </div>
+            <div class="footer-nav">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#home">Back to Top</a>
+            </div>
+            <div class="footer-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
